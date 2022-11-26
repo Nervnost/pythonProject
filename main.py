@@ -5,18 +5,23 @@ for i in range(n):
 x = 0
 y = 0
 z = 1
+run = 0
+while (run<n):
+    m=n-run
+    for x in range(run, m):
+        matrix[run][x] = z
+        z += 1
+    for y in range(run+1,m):
+        matrix[y][n - 1-run] = z
+        z += 1
+    for x in range(m-2, run,-1):
+        matrix[n - 1 - run][x] = z
+        z += 1
+    for y in range(m-1, run, -1):
+        matrix[y][run] = z
+        z += 1
+    run += 1
 
-for x in range(n-1):
-    matrix[0][x] = z
-    z +=1
-for y in range(n-1):
-    matrix[y][n-1] = z
-    z +=1
-for x in range(n-1):
-    matrix[n-1][n-1-x] = z
-    z += 1
-for y in range(n-1):
-    matrix[n-1-y][0] = z
-    z += 1
+
 for a in matrix:
     print(a)
