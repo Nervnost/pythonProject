@@ -1,12 +1,14 @@
-def bubble(a):
-    for i in range(0,len(a)-1):
-        for m in range(len(a)-1):
-            if(a[m]>a[m+1]):
-                a[m],a[m+1] = a[m+1], a[m]
-    return a
-import random
+n = 9
+s = True
 a = []
-for i in range(10):
-    a.append(random.randint(1,100))
-print(a)
-print(bubble(a))
+for i  in range(n):
+    a.append(0)
+b=[]
+for i in range(n):
+    b.append(a)
+while s:
+    for i in range(n)
+        a[i]=i
+    print(a)
+    for i in range(n-1)
+        a[i]=
