@@ -1,14 +1,10 @@
-n = 9
-s = True
-a = []
-for i  in range(n):
-    a.append(0)
-b=[]
-for i in range(n):
-    b.append(a)
-while s:
-    for i in range(n)
-        a[i]=i
+matrix = [[1,2,3], [4,5,6], [7,8,9]]
+print(matrix[2][2])
+x=0
+y=1
+line=matrix[y]
+elem=line[x]
+print(elem)
+
+for a in matrix:
     print(a)
-    for i in range(n-1)
-        a[i]=
