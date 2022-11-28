@@ -1,4 +1,4 @@
-n = 9
+n = int(input())
 matrix = [0] * n
 for i in range(n):
     matrix[i] = [0] * n
@@ -22,6 +22,8 @@ while (run<n):
         z += 1
     run += 1
 
+for j in matrix:
+    for k in j:
+        print("{:4d}".format(k), end="")
+    print()
 
-for a in matrix:
-    print(a)
